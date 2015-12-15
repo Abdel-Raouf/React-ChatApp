@@ -19673,7 +19673,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _channelsChannelSectionJsx = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"./channels/ChannelSection.jsx\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+	var _channelsChannelSectionJsx = __webpack_require__(160);
 
 	var _channelsChannelSectionJsx2 = _interopRequireDefault(_channelsChannelSectionJsx);
 
@@ -19719,6 +19719,274 @@
 	})(_react.Component);
 
 	exports['default'] = App;
+	module.exports = exports['default'];
+
+/***/ },
+/* 160 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, '__esModule', {
+		value: true
+	});
+
+	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+
+	var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; desc = parent = undefined; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _ChannelFormJsx = __webpack_require__(161);
+
+	var _ChannelFormJsx2 = _interopRequireDefault(_ChannelFormJsx);
+
+	var _ChannelListJsx = __webpack_require__(162);
+
+	var _ChannelListJsx2 = _interopRequireDefault(_ChannelListJsx);
+
+	var ChannelSection = (function (_Component) {
+		_inherits(ChannelSection, _Component);
+
+		function ChannelSection() {
+			_classCallCheck(this, ChannelSection);
+
+			_get(Object.getPrototypeOf(ChannelSection.prototype), 'constructor', this).apply(this, arguments);
+		}
+
+		_createClass(ChannelSection, [{
+			key: 'render',
+			value: function render() {
+				return _react2['default'].createElement(
+					'div',
+					null,
+					_react2['default'].createElement(_ChannelListJsx2['default'], this.props),
+					_react2['default'].createElement(_ChannelFormJsx2['default'], this.props)
+				);
+			}
+		}]);
+
+		return ChannelSection;
+	})(_react.Component);
+
+	ChannelSection.propTypes = {
+		channels: _react2['default'].PropTypes.array.isRequired,
+		setChannel: _react2['default'].PropTypes.func.isRequired,
+		addChannel: _react2['default'].PropTypes.func.isRequired
+	};
+
+	exports['default'] = ChannelSection;
+	module.exports = exports['default'];
+
+/***/ },
+/* 161 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, '__esModule', {
+		value: true
+	});
+
+	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+
+	var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; desc = parent = undefined; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var ChannelForm = (function (_Component) {
+		_inherits(ChannelForm, _Component);
+
+		function ChannelForm() {
+			_classCallCheck(this, ChannelForm);
+
+			_get(Object.getPrototypeOf(ChannelForm.prototype), 'constructor', this).apply(this, arguments);
+		}
+
+		_createClass(ChannelForm, [{
+			key: 'onSubmit',
+			value: function onSubmit(e) {
+				e.preventDefault();
+				var node = this.refs.channel;
+				var channelName = node.value;
+				this.props.addChannel(channelName);
+				node.value = '';
+			}
+		}, {
+			key: 'render',
+			value: function render() {
+				return _react2['default'].createElement(
+					'form',
+					{ onSubmit: this.onSubmit.bind(this) },
+					_react2['default'].createElement('input', {
+						type: 'text',
+						ref: 'channel'
+					})
+				);
+			}
+		}]);
+
+		return ChannelForm;
+	})(_react.Component);
+
+	ChannelForm.propTypes = {
+		addChannel: _react2['default'].PropTypes.func.isRequired
+	};
+
+	exports['default'] = ChannelForm;
+	module.exports = exports['default'];
+
+/***/ },
+/* 162 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, '__esModule', {
+		value: true
+	});
+
+	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+
+	var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; desc = parent = undefined; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _ChannelJsx = __webpack_require__(163);
+
+	var _ChannelJsx2 = _interopRequireDefault(_ChannelJsx);
+
+	var ChannelList = (function (_Component) {
+		_inherits(ChannelList, _Component);
+
+		function ChannelList() {
+			_classCallCheck(this, ChannelList);
+
+			_get(Object.getPrototypeOf(ChannelList.prototype), 'constructor', this).apply(this, arguments);
+		}
+
+		_createClass(ChannelList, [{
+			key: 'render',
+			value: function render() {
+				var _this = this;
+
+				return _react2['default'].createElement(
+					'ul',
+					null,
+					this.props.channels.map(function (chan) {
+						return _react2['default'].createElement(_ChannelJsx2['default'], {
+							channel: chan,
+							setChannel: _this.props.setChannel
+						});
+					})
+				);
+			}
+		}]);
+
+		return ChannelList;
+	})(_react.Component);
+
+	ChannelList.propTypes = {
+		channels: _react2['default'].PropTypes.array.isRequired,
+		setChannel: _react2['default'].PropTypes.func.isRequired
+	};
+
+	exports['default'] = ChannelList;
+	module.exports = exports['default'];
+
+/***/ },
+/* 163 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, '__esModule', {
+		value: true
+	});
+
+	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+
+	var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; desc = parent = undefined; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var Channel = (function (_Component) {
+		_inherits(Channel, _Component);
+
+		function Channel() {
+			_classCallCheck(this, Channel);
+
+			_get(Object.getPrototypeOf(Channel.prototype), 'constructor', this).apply(this, arguments);
+		}
+
+		_createClass(Channel, [{
+			key: 'onClick',
+			value: function onClick(e) {
+				e.preventDefault();
+				var _props = this.props;
+				var setChannel = _props.setChannel;
+				var channel = _props.channel;
+
+				setChannel(channel);
+			}
+		}, {
+			key: 'render',
+			value: function render() {
+				var channel = this.props.channel;
+
+				return _react2['default'].createElement(
+					'li',
+					null,
+					_react2['default'].createElement(
+						'a',
+						{ onClick: this.onClick.bind(this) },
+						channel.name
+					)
+				);
+			}
+		}]);
+
+		return Channel;
+	})(_react.Component);
+
+	Channel.propTypes = {
+		channel: _react2['default'].PropTypes.object.isRequired,
+		setChannel: _react2['default'].PropTypes.func.isRequired
+	};
+
+	exports['default'] = Channel;
 	module.exports = exports['default'];
 
 /***/ }

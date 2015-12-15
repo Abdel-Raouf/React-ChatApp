@@ -4,11 +4,11 @@ import ChannelList from './ChannelList.jsx';
 
 class ChannelSection extends Component{
 	render(){
-		return(
+		return (
 			<div>
 				<ChannelList {...this.props} />
 				<ChannelForm {...this.props} />
-			<div/>
+			</div>
 		)
 	}
 }

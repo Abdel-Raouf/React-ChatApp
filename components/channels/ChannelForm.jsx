@@ -15,7 +15,7 @@ class ChannelForm extends Component{
 					type="text"
 					ref="channel"
 				/>
-			<form/>
+			</form>
 		)
 	}
 }
