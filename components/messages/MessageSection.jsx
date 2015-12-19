@@ -4,6 +4,7 @@ import MessageForm from './MessageForm.jsx';
 
 class MessageSection extends Component{
 	render(){
+		let {activeChannel} = this.props;
 		return(
 			<div className="messages-container panel panel-default">
 				<div className="panel-heading">
