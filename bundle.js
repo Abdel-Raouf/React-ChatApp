@@ -19706,28 +19706,7 @@
 		_createClass(App, [{
 			key: 'componentDidMount',
 			value: function componentDidMount() {
-				var ws = this.ws = new webSocket('ws://echo.websocket.org');
-				ws.onmessage = this.message.bind(this);
-				ws.onopen = this.open.bind(this);
-				ws.onclose = this.close.bind(this);
-			}
-		}, {
-			key: 'message',
-			value: function message(e) {
-				var event = JSON.parse(e.data);
-				if (event.name === 'channel add') {
-					this.newChannel(event.data);
-				}
-			}
-		}, {
-			key: 'open',
-			value: function open() {
-				this.setState({ connected: true });
-			}
-		}, {
-			key: 'close',
-			value: function close() {
-				this.setState({ connected: false });
+				var ws = this.ws = new WebSocket('ws://echo.websocket.org');
 			}
 		}, {
 			key: 'newChannel',
